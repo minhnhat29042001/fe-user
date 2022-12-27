@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: 'SVN-Poppins';
+  src: url('/src/assets/fonts/poppins/SVN-Poppins.otf');
+}
+@font-face {
+  font-family: 'SVN-PoppinsBlack';
+  src: url('/src/assets/fonts/poppins/SVN-PoppinsBlack.otf');
+}
+@font-face {
+  font-family: 'SVN-PoppinsBlackItalic';
+  src: url('/src/assets/fonts/poppins/SVN-PoppinsBlackItalic.otf');
+}
+@font-face {
+  font-family: 'SVN-PoppinsBold';
+  src: url('/src/assets/fonts/poppins/SVN-PoppinsBold.otf');
+}
+@font-face {
+  font-family: 'SVN-PoppinsBoldItalic';
+  src: url('/src/assets/fonts/poppins/SVN-PoppinsBoldItalic.otf');
+}
+@font-face {
+  font-family: 'SVN-PoppinsExtraBold';
+  src: url('/src/assets/fonts/poppins/SVN-PoppinsExtraBold.otf');
+}
+@font-face {
+  font-family: 'SVN-PoppinsExtraBoldItalic';
+  src: url('/src/assets/fonts/poppins/SVN-PoppinsExtraBoldItalic.otf');
+}
+@font-face {
+  font-family: 'SVN-PoppinsExtraLight';
+  src: url('/src/assets/fonts/poppins/SVN-PoppinsExtraLight.otf');
+}
+@font-face {
+  font-family: 'SVN-PoppinsExtraLightItalic';
+  src: url('/src/assets/fonts/poppins/SVN-PoppinsExtraLightItalic.otf');
+}
+@font-face {
+  font-family: 'SVN-PoppinsItalic';
+  src: url('/src/assets/fonts/poppins/SVN-PoppinsItalic.otf');
+}
+@font-face {
+  font-family: 'SVN-PoppinsLight';
+  src: url('/src/assets/fonts/poppins/SVN-PoppinsLight.otf');
+}
+@font-face {
+  font-family: 'SVN-PoppinsLightItalic';
+  src: url('/src/assets/fonts/poppins/SVN-PoppinsLightItalic.otf');
+}
+@font-face {
+  font-family: 'SVN-PoppinsMedium';
+  src: url('/src/assets/fonts/poppins/SVN-PoppinsMedium.otf');
+}
+@font-face {
+  font-family: 'SVN-PoppinsMediumItalic';
+  src: url('/src/assets/fonts/poppins/SVN-PoppinsMediumItalic.otf');
+}
+@font-face {
+  font-family: 'SVN-PoppinsSemiBold';
+  src: url('/src/assets/fonts/poppins/SVN-PoppinsSemiBold.otf');
+}
+@font-face {
+  font-family: 'SVN-PoppinsSemiBoldItalic';
+  src: url('/src/assets/fonts/poppins/SVN-PoppinsSemiBoldItalic.otf');
+}
+@font-face {
+  font-family: 'SVN-PoppinsThin';
+  src: url('/src/assets/fonts/poppins/SVN-PoppinsThin.otf');
+}
+@font-face {
+  font-family: 'SVN-PoppinsThinItalic';
+  src: url('/src/assets/fonts/poppins/SVN-PoppinsThinItalic.otf');
+}
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
