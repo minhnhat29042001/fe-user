@@ -108,11 +108,11 @@ const ProductDetail = () => {
             <BiIcons.BiShoppingBag color={'#fff'} className="w-[21px] h-[21px] mr-2 " />
             Đặt giao tận nơi
           </button>
-          {productData?.productGroup.name !== 'Bánh mặn' &&
-            productData?.productGroup.name !== 'Snack' &&
-            productData?.productGroup.name !== 'Thưởng thức tại nhà' &&
-            productData?.productGroup.name !== 'Cà phê tại nhà' &&
-            productData?.productGroup.name !== 'Bánh ngọt' && (
+          {productData?.productGroup?.name !== 'Bánh mặn' &&
+            productData?.productGroup?.name !== 'Snack' &&
+            productData?.productGroup?.name !== 'Thưởng thức tại nhà' &&
+            productData?.productGroup?.name !== 'Cà phê tại nhà' &&
+            productData?.productGroup?.name !== 'Bánh ngọt' && (
               <>
                 <div className="mt-5">
                   <div className="mb-3">Chọn size (bắt buộc)</div>
