@@ -6,9 +6,11 @@ import Message from '../../component/Common/Message';
 const Forgot = () => {
   const { register, handleSubmit, formState: {errors}, reset } = useForm();
 
+
+
   const onSubmit = async (data: any) => {
     try {
-      const res = await forgotPassword(data)
+      const res = await forgotPassword(data, window.location.origin)
       alert(res.data?.content)
       reset()
     } catch (error: any) {

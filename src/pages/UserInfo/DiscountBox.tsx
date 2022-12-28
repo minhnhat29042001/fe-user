@@ -26,13 +26,22 @@ const DiscountBox = ({
   };
 
   const selectAsnycDiscount = async (discount: any) => {
-    try {
-      const res = await selectDiscount({code: discount?.code, totalPriceOfOrder: totalPrice });
-      setSelectDiscount(res.data.content)
-      setOpenDiscount(false);
-    } catch (e: any) {
-      alert(`Lỗi: ${e?.response?.data?.errors?.join() || e?.message }`);
-    }
+    const finalPrice: number = discount
+    ? discount?.amountType === 'MONEY'
+      ? totalPrice - Number(discount?.discountAmount)
+      : totalPrice - Number(discount?.discountAmount) * totalPrice
+    : totalPrice;
+
+    if(finalPrice >= 10000) {
+      try {
+        const res = await selectDiscount({code: discount?.code, totalPriceOfOrder: totalPrice });
+        setSelectDiscount(res.data.content)
+        setOpenDiscount(false);
+      } catch (e: any) {
+        alert(`Lỗi: ${e?.response?.data?.errors || e?.message }`);
+      }
+    } else  alert(`Đơn hàng phải lớn hơn hoặc bằng 10.000 đ`);
+
   };
 
   useEffect(() => {

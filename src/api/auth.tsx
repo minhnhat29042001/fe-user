@@ -40,8 +40,8 @@ export const resetPassword = async (data: any) => {
   return await AxiosServicePost(EndpointConfig.auth.RESET, undefined, data, false);
 };
 
-export const forgotPassword = (data: any) => {
-  return AxiosServicePost(`${EndpointConfig.auth.FORGOT_PASSWORD}?email=${data?.email}&feHomePage=https://spectacular-clafoutis-af79ec.netlify.app`, {...data, feHomePage: 'https://spectacular-clafoutis-af79ec.netlify.app/'})
+export const forgotPassword = (data: any, url: string) => {
+  return AxiosServicePost(`${EndpointConfig.auth.FORGOT_PASSWORD}?email=${data?.email}&feHomePage=${url}`, {...data, feHomePage: 'https://spectacular-clafoutis-af79ec.netlify.app/'})
 }
 
 export const updateUser = (data: any) => {
